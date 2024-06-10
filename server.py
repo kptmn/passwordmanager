@@ -102,7 +102,7 @@ class Handler(socketserver.BaseRequestHandler):
                 self.queued_data.append({
                     "Type":"Message",
                     "Message":{"Message1":"Error",
-                            "Message2":f"password for {username} can not found!"},
+                            "Message2":f"password for {username} can not found! Try calling List First!"},
                             })
         except Exception as e:
             self.queued_data.append({
